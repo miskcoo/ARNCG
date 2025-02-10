@@ -43,4 +43,18 @@ To run the CUTEst benchmark, follow these steps:
 
 ### General Usage
 
+To use the algorithm in a general setting, start by setting up the configuration. This configuration is a MATLAB struct that includes several fields; for an example, see `matlab/TestCUTEst.m`.
 
+Once your configuration (stored in the variable `options`) is ready, execute the following code:
+
+```matlab
+% 'options' is your configuration struct
+[x_opt, norm_g, records, hess_evals, grad_evals, func_evals] = AdapNewtonCG(p.x0, 1.0e-5, options);
+```
+
+The function returns:
+
+1. **x_opt**: The computed solution.
+2. **norm_g**: The norm of the gradient at `x_opt`. Compare this value with the target tolerance (1.0e-5 in this example) to determine if the algorithm converged successfully.
+3. **records**: Detailed information about the algorithm's progress.
+4. **hess_evals**, **grad_evals**, and **func_evals**: The number of times the Hessian, gradient, and function oracles were accessed, respectively.
