@@ -152,6 +152,9 @@ for ip = ip_range
     options.norm_fn = @(x, v) norm(v);
     options.loss_fn = @p.objective;
     options.grad_fn = @cutest_grad;
+    % Note: If multiple calls to `hessvec_fn` at the same point `x` require a
+    %       preprocessing step that is independent of `v`, you should perform this
+    %       preprocessing once and cache the results for efficiency.
     options.hessvec_fn = @cutest_hprod;
 
     % options
