@@ -1,6 +1,20 @@
 ARNCG
 =====
 
+Code for the following article:
+
+```bibtex
+@misc{zhou2025regularizednewtonmethodnonconvex,
+      title={A Regularized Newton Method for Nonconvex Optimization with Global and Local Complexity Guarantees}, 
+      author={Yuhao Zhou and Jintao Xu and Chenglong Bao and Chao Ding and Jun Zhu},
+      year={2025},
+      eprint={2502.04799},
+      archivePrefix={arXiv},
+      primaryClass={math.OC},
+      url={https://arxiv.org/abs/2502.04799}, 
+}
+```
+
 ## Usage
 
 ### Running the CUTEst Benchmark
