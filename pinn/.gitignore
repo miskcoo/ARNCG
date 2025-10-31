@@ -1,0 +1,11 @@
+__pycache__/
+*env/
+*.pdf
+*.apng
+wandb/
+*temp/
+.DS_Store
+._*
+Thumbs.db
+*.pyc
+cache
